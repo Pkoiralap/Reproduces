@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "reproduce/main.py", line 8, in <module>
+    diarization = pipeline("test.mp3", num_speakers=2)
+  File "reproduce/venv/lib/python3.9/site-packages/pyannote/audio/core/pipeline.py", line 238, in __call__
+    return self.apply(file, **kwargs)
+  File "reproduce/venv/lib/python3.9/site-packages/pyannote/audio/pipelines/speaker_diarization.py", line 486, in apply
+    embeddings = self.get_embeddings(
+  File "reproduce/venv/lib/python3.9/site-packages/pyannote/audio/pipelines/speaker_diarization.py", line 343, in get_embeddings
+    waveform_batch = torch.vstack(waveforms)
+RuntimeError: Sizes of tensors must match except in dimension 0. Expected size 80000 but got size 74254 for tensor number 18 in the list.

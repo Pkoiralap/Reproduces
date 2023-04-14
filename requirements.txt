@@ -1,0 +1,4 @@
+git+https://github.com/hmmlearn/hmmlearn
+torch==1.13.0
+torchaudio==0.13.1
+pyannote.audio
